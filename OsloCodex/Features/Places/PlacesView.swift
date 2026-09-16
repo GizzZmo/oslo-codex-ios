@@ -3,6 +3,7 @@ import SwiftUI
 
 struct PlacesView: View {
     @Bindable var router: AppRouter
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.openURL) private var openURL
     @State private var cameraPosition: MapCameraPosition = .region(
         MKCoordinateRegion(
@@ -31,37 +32,27 @@ struct PlacesView: View {
                 .environment(\.colorScheme, .dark)
                 .ignoresSafeArea()
 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 12) {
-                        ForEach(Album.current.places) { place in
-                            VStack(alignment: .leading, spacing: 8) {
-                                Text(place.title)
-                                    .font(.headline)
-                                    .foregroundStyle(Palette.ink)
-                                Text(place.localizedNote)
-                                    .font(.subheadline)
-                                    .foregroundStyle(Palette.muted)
-                                HStack {
-                                    Button(String(localized: "listen_here")) {
-                                        router.isListenSheetPresented = true
-                                    }
-                                    .buttonStyle(GlassButtonStyle())
-
-                                    Button {
-                                        openURL(mapsURL(for: place))
-                                    } label: {
-                                        Label(String(localized: "navigate"), systemImage: "location")
-                                    }
-                                    .buttonStyle(GlassButtonStyle())
+                Group {
+                    if dynamicTypeSize.isAccessibilitySize {
+                        ScrollView {
+                            VStack(spacing: 12) {
+                                ForEach(Album.current.places) { place in
+                                    placeCard(for: place)
                                 }
                             }
-                            .padding(18)
-                            .frame(width: 280, alignment: .leading)
-                            .background(Palette.backgroundElevated.opacity(0.9), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-                            .glassEffect()
+                            .padding(.horizontal, 20)
+                        }
+                    } else {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 12) {
+                                ForEach(Album.current.places) { place in
+                                    placeCard(for: place)
+                                        .frame(width: 280, alignment: .leading)
+                                }
+                            }
+                            .padding(.horizontal, 20)
                         }
                     }
-                    .padding(.horizontal, 20)
                 }
                 .padding(.bottom, 20)
             }
@@ -76,5 +67,51 @@ struct PlacesView: View {
             URLQueryItem(name: "q", value: place.title)
         ]
         return components.url!
+    }
+
+    @ViewBuilder
+    private func placeCard(for place: Place) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(place.title)
+                .font(.headline)
+                .foregroundStyle(Palette.ink)
+            Text(place.localizedNote)
+                .font(.subheadline)
+                .foregroundStyle(Palette.muted)
+
+            if dynamicTypeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 10) {
+                    Button(String(localized: "listen_here")) {
+                        router.isListenSheetPresented = true
+                    }
+                    .buttonStyle(GlassButtonStyle())
+
+                    Button {
+                        openURL(mapsURL(for: place))
+                    } label: {
+                        Label(String(localized: "navigate"), systemImage: "location")
+                    }
+                    .buttonStyle(GlassButtonStyle())
+                }
+            } else {
+                HStack {
+                    Button(String(localized: "listen_here")) {
+                        router.isListenSheetPresented = true
+                    }
+                    .buttonStyle(GlassButtonStyle())
+
+                    Button {
+                        openURL(mapsURL(for: place))
+                    } label: {
+                        Label(String(localized: "navigate"), systemImage: "location")
+                    }
+                    .buttonStyle(GlassButtonStyle())
+                }
+            }
+        }
+        .padding(18)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Palette.backgroundElevated.opacity(0.9), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .glassEffect()
     }
 }

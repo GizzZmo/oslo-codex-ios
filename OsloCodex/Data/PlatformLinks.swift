@@ -83,7 +83,7 @@ enum PlatformLinks {
         kind: .youTubeMusic,
         title: "YouTube Music",
         subtitle: "Album playlist",
-        nativeURL: URL(string: "youtube://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ"),
+        nativeURL: URL(string: "youtubemusic://playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ"),
         webURL: URL(string: "https://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ")!
     )
 

@@ -11,7 +11,7 @@ struct TracksView: View {
                         router.selectedTrack = track
                     } label: {
                         HStack(spacing: 16) {
-                            Text(String(format: "%02d", track.index))
+                            Text(track.index.formatted(.number.precision(.integerLength(2))))
                                 .font(.headline.monospacedDigit())
                                 .foregroundStyle(Palette.neon)
                             VStack(alignment: .leading, spacing: 4) {

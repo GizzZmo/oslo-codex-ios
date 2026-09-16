@@ -30,16 +30,30 @@ struct ArtistView: View {
                         Text(String(localized: "discography_title"))
                             .font(.title3.bold())
                             .foregroundStyle(Palette.ink)
-                        HStack(spacing: 12) {
-                            Link(destination: PlatformLinks.appleMusicArtist.bestURL) {
-                                Label("Apple Music", systemImage: "music.note")
-                            }
-                            .buttonStyle(GlassButtonStyle())
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 12) {
+                                Link(destination: PlatformLinks.appleMusicArtist.bestURL) {
+                                    Label("Apple Music", systemImage: "music.note")
+                                }
+                                .buttonStyle(GlassButtonStyle())
 
-                            Link(destination: PlatformLinks.spotifyArtist.bestURL) {
-                                Label("Spotify", systemImage: "waveform")
+                                Link(destination: PlatformLinks.spotifyArtist.bestURL) {
+                                    Label("Spotify", systemImage: "waveform")
+                                }
+                                .buttonStyle(GlassButtonStyle())
                             }
-                            .buttonStyle(GlassButtonStyle())
+
+                            VStack(alignment: .leading, spacing: 12) {
+                                Link(destination: PlatformLinks.appleMusicArtist.bestURL) {
+                                    Label("Apple Music", systemImage: "music.note")
+                                }
+                                .buttonStyle(GlassButtonStyle())
+
+                                Link(destination: PlatformLinks.spotifyArtist.bestURL) {
+                                    Label("Spotify", systemImage: "waveform")
+                                }
+                                .buttonStyle(GlassButtonStyle())
+                            }
                         }
                     }
 
