@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0233218A9C9A936AF6F52AD8 /* OsloCodexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08096A930C78855636D2971A /* OsloCodexApp.swift */; };
+		04A25496D600E71BD7B7108D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545CA20BDEBDA3609612717B /* Assets.xcassets */; };
+		2892DE9A8DBF2A047AD67710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */; };
+		28EFC790CD7A41A61A52EEB2 /* TrackChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4265B7FEF3AA6A1C1D1 /* TrackChoice.swift */; };
+		2D2F94EFABE3965AE81A2573 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E59F610A243DBDD45B3178 /* WidgetKit.framework */; };
+		3227EE0481A4D04791A65F5C /* Chrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE794D4F85D05394BCDC61E3 /* Chrome.swift */; };
+		4EC7CBF2CF965226BC5F2EAA /* LinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4843DE526A1F323BD029A /* LinkOpener.swift */; };
+		5275313B5940D306F22A0619 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C827AE7183786E5D6485C /* AppIntents.framework */; };
+		55D45C0750B11CC233FD3BE1 /* PlatformLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */; };
+		58D93F87E5ABE18FD2A93B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545CA20BDEBDA3609612717B /* Assets.xcassets */; };
+		5A76D98527051497ADD0BF96 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141C8C20464A6177667544E2 /* SwiftUI.framework */; };
+		5D6F108A39F387040F1B1A14 /* LyricsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34FD2286AC526E3EFCB83C /* LyricsLoader.swift */; };
+		6081BB2E552F6AE7AB68E047 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FD9AC5D3C11DEDC8ABD62 /* HomeView.swift */; };
+		6533F27413ED30EC96B7CBF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35365F7731A4AE8E02C01B9F /* UIKit.framework */; };
+		6EE77FE90141A397B8D34C4A /* ListenSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA85E5D33A88F7510F5D8A7 /* ListenSheet.swift */; };
+		6F31523552AD0A993253DB15 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E59F610A243DBDD45B3178 /* WidgetKit.framework */; };
+		703A48F2DC1AC525C5111D6E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AE329B67E54F0BD310A78 /* Album.swift */; };
+		750CD20EDE72E2CFF88FF231 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81D3B14E0E03AA248A2D40 /* TrackDetailView.swift */; };
+		7F995A5CF1714A08AED29E16 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381BD2032FAB271EC0282A7 /* AppRouter.swift */; };
+		8127FB94B215240B15BCC001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */; };
+		81EB355D7989E3757A4407DC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D1A4026C009FC5E489F36 /* Localizable.xcstrings */; };
+		84D09F9B309FE004FEF7F6F3 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C827AE7183786E5D6485C /* AppIntents.framework */; };
+		84FDDEB2791FBE2FDB273F18 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F0C8257A4E95A52A14459 /* ArtistView.swift */; };
+		91B439E9DCF59BD8CCDF8365 /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2581C514AD256E31FD95F20 /* MusicKit.framework */; };
+		92DD4CF7C0BBDBD1F34B8679 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D31B0D01EF3AFB3BC7A1940 /* Palette.swift */; };
+		9CF6A73FFAD143C3BE353CE8 /* PlatformLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */; };
+		9E5BC93472A7617E7BE7AFB8 /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FCF28E70F5373C5E9F3E3 /* PlacesView.swift */; };
+		9E877AACAD7E657AA3AC2C8B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AE329B67E54F0BD310A78 /* Album.swift */; };
+		AD3D5B28728149473B097D01 /* TrackChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4265B7FEF3AA6A1C1D1 /* TrackChoice.swift */; };
+		B2D00D204A9E8893BF1A0DB2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D1A4026C009FC5E489F36 /* Localizable.xcstrings */; };
+		B7821F981AB5EA6B7BA2F7F3 /* oslo-codex.md in Resources */ = {isa = PBXBuildFile; fileRef = 62CF6AD3503D48EB025BED93 /* oslo-codex.md */; };
+		D2F5BA10EAA66E65BFD5863E /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57A2AD8789D4F973A12889 /* MusicService.swift */; };
+		EA1DF06726FF82E8C70A9E8B /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41302DBAFDEF751506300D8 /* TracksView.swift */; };
+		EA6B65E34DC49A0189CA15AF /* OsloCodexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8429C4C31BFC8BD37D6572 /* OsloCodexWidget.swift */; };
+		EF42D4076D69D06C51435DE1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D125CE4CFF0387546C0E7D54 /* MapKit.framework */; };
+		F00F620D51372DE4BCB3117D /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FB744B8DD226FCF81CFBA /* RootTabView.swift */; };
+		F50C0DC01103C087DEAC3205 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141C8C20464A6177667544E2 /* SwiftUI.framework */; };
+		FC1DE191339A213B4397A707 /* OsloCodexWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97E7C50EC2C58153EB4E8C5B /* OsloCodexWidgetExtension.appex */; };
+		FC3BB0F9BBF03F4C89FE4067 /* AlbumIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6CB6AC7CDA338D5761E034 /* AlbumIntents.swift */; };
+		FF0A28347504422A83F7B839 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D31B0D01EF3AFB3BC7A1940 /* Palette.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDCAE3CB39AB9C0CDDA1DAA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 288FEF7ECDFC9635F57BBE71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66D2EB08C05645B70D3201A5;
+			remoteInfo = OsloCodexWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7662F027D2E243E27C11B96 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC1DE191339A213B4397A707 /* OsloCodexWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08096A930C78855636D2971A /* OsloCodexApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OsloCodexApp.swift; path = OsloCodex/App/OsloCodexApp.swift; sourceTree = "<group>"; };
+		0CF64E4FCFC937E9B42112CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = OsloCodexWidget/Info.plist; sourceTree = "<group>"; };
+		141C8C20464A6177667544E2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = "<group>"; };
+		2D31B0D01EF3AFB3BC7A1940 /* Palette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Palette.swift; path = OsloCodex/Design/Palette.swift; sourceTree = "<group>"; };
+		35365F7731A4AE8E02C01B9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
+		3D8429C4C31BFC8BD37D6572 /* OsloCodexWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OsloCodexWidget.swift; path = OsloCodexWidget/OsloCodexWidget.swift; sourceTree = "<group>"; };
+		3FD040DD24889D22F62222D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = OsloCodex/Support/Info.plist; sourceTree = "<group>"; };
+		5381BD2032FAB271EC0282A7 /* AppRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRouter.swift; path = OsloCodex/App/AppRouter.swift; sourceTree = "<group>"; };
+		545CA20BDEBDA3609612717B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OsloCodex/Assets.xcassets; sourceTree = "<group>"; };
+		5D2F0C8257A4E95A52A14459 /* ArtistView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArtistView.swift; path = OsloCodex/Features/Artist/ArtistView.swift; sourceTree = "<group>"; };
+		619FCF28E70F5373C5E9F3E3 /* PlacesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlacesView.swift; path = OsloCodex/Features/Places/PlacesView.swift; sourceTree = "<group>"; };
+		62CF6AD3503D48EB025BED93 /* oslo-codex.md */ = {isa = PBXFileReference; includeInIndex = 1; name = "oslo-codex.md"; path = "Data/Lyrics/oslo-codex.md"; sourceTree = "<group>"; };
+		683FD9AC5D3C11DEDC8ABD62 /* HomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = OsloCodex/Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		7C4D1A4026C009FC5E489F36 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = OsloCodex/Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlatformLinks.swift; path = OsloCodex/Data/PlatformLinks.swift; sourceTree = "<group>"; };
+		8AA85E5D33A88F7510F5D8A7 /* ListenSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenSheet.swift; path = OsloCodex/Features/Listen/ListenSheet.swift; sourceTree = "<group>"; };
+		8E34FD2286AC526E3EFCB83C /* LyricsLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyricsLoader.swift; path = OsloCodex/Services/LyricsLoader.swift; sourceTree = "<group>"; };
+		96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
+		97E59F610A243DBDD45B3178 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = "<group>"; };
+		97E7C50EC2C58153EB4E8C5B /* OsloCodexWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OsloCodexWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B81D3B14E0E03AA248A2D40 /* TrackDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackDetailView.swift; path = OsloCodex/Features/Tracks/TrackDetailView.swift; sourceTree = "<group>"; };
+		A4A4843DE526A1F323BD029A /* LinkOpener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkOpener.swift; path = OsloCodex/Services/LinkOpener.swift; sourceTree = "<group>"; };
+		B2581C514AD256E31FD95F20 /* MusicKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MusicKit.framework; path = System/Library/Frameworks/MusicKit.framework; sourceTree = "<group>"; };
+		B873B8E436C51816FDCF8335 /* OsloCodex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OsloCodex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3AE329B67E54F0BD310A78 /* Album.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Album.swift; path = OsloCodex/Data/Album.swift; sourceTree = "<group>"; };
+		BE1C827AE7183786E5D6485C /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = "<group>"; };
+		BE794D4F85D05394BCDC61E3 /* Chrome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chrome.swift; path = OsloCodex/Design/Chrome.swift; sourceTree = "<group>"; };
+		CD6CB6AC7CDA338D5761E034 /* AlbumIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumIntents.swift; path = OsloCodex/Intents/AlbumIntents.swift; sourceTree = "<group>"; };
+		CF5FB744B8DD226FCF81CFBA /* RootTabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RootTabView.swift; path = OsloCodex/App/RootTabView.swift; sourceTree = "<group>"; };
+		D125CE4CFF0387546C0E7D54 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = "<group>"; };
+		D41302DBAFDEF751506300D8 /* TracksView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TracksView.swift; path = OsloCodex/Features/Tracks/TracksView.swift; sourceTree = "<group>"; };
+		DD57A2AD8789D4F973A12889 /* MusicService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MusicService.swift; path = OsloCodex/Services/MusicService.swift; sourceTree = "<group>"; };
+		DD82E4265B7FEF3AA6A1C1D1 /* TrackChoice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackChoice.swift; path = OsloCodex/Intents/TrackChoice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1793F64DBCAA1C73AC2927B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8127FB94B215240B15BCC001 /* Foundation.framework in Frameworks */,
+				F50C0DC01103C087DEAC3205 /* SwiftUI.framework in Frameworks */,
+				6F31523552AD0A993253DB15 /* WidgetKit.framework in Frameworks */,
+				84D09F9B309FE004FEF7F6F3 /* AppIntents.framework in Frameworks */,
+				EF42D4076D69D06C51435DE1 /* MapKit.framework in Frameworks */,
+				91B439E9DCF59BD8CCDF8365 /* MusicKit.framework in Frameworks */,
+				6533F27413ED30EC96B7CBF8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C106F37573248EE741EF0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2892DE9A8DBF2A047AD67710 /* Foundation.framework in Frameworks */,
+				5A76D98527051497ADD0BF96 /* SwiftUI.framework in Frameworks */,
+				2D2F94EFABE3965AE81A2573 /* WidgetKit.framework in Frameworks */,
+				5275313B5940D306F22A0619 /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9AAAF1CF4E080BBA9A3B25 = {
+			isa = PBXGroup;
+			children = (
+				A724BE1DD23461E90D19639A /* Products */,
+				4C65FB2F127FBDF511D5874A /* Frameworks */,
+				08096A930C78855636D2971A /* OsloCodexApp.swift */,
+				5381BD2032FAB271EC0282A7 /* AppRouter.swift */,
+				CF5FB744B8DD226FCF81CFBA /* RootTabView.swift */,
+				2D31B0D01EF3AFB3BC7A1940 /* Palette.swift */,
+				BE794D4F85D05394BCDC61E3 /* Chrome.swift */,
+				87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */,
+				BA3AE329B67E54F0BD310A78 /* Album.swift */,
+				683FD9AC5D3C11DEDC8ABD62 /* HomeView.swift */,
+				8AA85E5D33A88F7510F5D8A7 /* ListenSheet.swift */,
+				D41302DBAFDEF751506300D8 /* TracksView.swift */,
+				9B81D3B14E0E03AA248A2D40 /* TrackDetailView.swift */,
+				619FCF28E70F5373C5E9F3E3 /* PlacesView.swift */,
+				5D2F0C8257A4E95A52A14459 /* ArtistView.swift */,
+				A4A4843DE526A1F323BD029A /* LinkOpener.swift */,
+				DD57A2AD8789D4F973A12889 /* MusicService.swift */,
+				8E34FD2286AC526E3EFCB83C /* LyricsLoader.swift */,
+				CD6CB6AC7CDA338D5761E034 /* AlbumIntents.swift */,
+				7C4D1A4026C009FC5E489F36 /* Localizable.xcstrings */,
+				3FD040DD24889D22F62222D8 /* Info.plist */,
+				545CA20BDEBDA3609612717B /* Assets.xcassets */,
+				3D8429C4C31BFC8BD37D6572 /* OsloCodexWidget.swift */,
+				0CF64E4FCFC937E9B42112CB /* Info.plist */,
+				62CF6AD3503D48EB025BED93 /* oslo-codex.md */,
+				DD82E4265B7FEF3AA6A1C1D1 /* TrackChoice.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		4C65FB2F127FBDF511D5874A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB724239E83FDEDE0DE878A /* iOS */,
+				141C8C20464A6177667544E2 /* SwiftUI.framework */,
+				97E59F610A243DBDD45B3178 /* WidgetKit.framework */,
+				BE1C827AE7183786E5D6485C /* AppIntents.framework */,
+				D125CE4CFF0387546C0E7D54 /* MapKit.framework */,
+				B2581C514AD256E31FD95F20 /* MusicKit.framework */,
+				35365F7731A4AE8E02C01B9F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EB724239E83FDEDE0DE878A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A724BE1DD23461E90D19639A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B873B8E436C51816FDCF8335 /* OsloCodex.app */,
+				97E7C50EC2C58153EB4E8C5B /* OsloCodexWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		447C169F4DF025E00D92FA79 /* OsloCodex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63D061FFD0C1477834255C2D /* Build configuration list for PBXNativeTarget "OsloCodex" */;
+			buildPhases = (
+				D5C04E1C6A45F0CDB62749B8 /* Sources */,
+				1793F64DBCAA1C73AC2927B3 /* Frameworks */,
+				6AD30EF1E2980A08AD114BD0 /* Resources */,
+				A7662F027D2E243E27C11B96 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8DD300B35956C819B46C530 /* PBXTargetDependency */,
+			);
+			name = OsloCodex;
+			productName = OsloCodex;
+			productReference = B873B8E436C51816FDCF8335 /* OsloCodex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66D2EB08C05645B70D3201A5 /* OsloCodexWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9096FA19754DD252C31DF5E /* Build configuration list for PBXNativeTarget "OsloCodexWidgetExtension" */;
+			buildPhases = (
+				4615DB22C6EBDB34317DDBCD /* Sources */,
+				D9C106F37573248EE741EF0F /* Frameworks */,
+				56666F0520AF82D6458C6F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OsloCodexWidgetExtension;
+			productName = OsloCodexWidgetExtension;
+			productReference = 97E7C50EC2C58153EB4E8C5B /* OsloCodexWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		288FEF7ECDFC9635F57BBE71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					447C169F4DF025E00D92FA79 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					66D2EB08C05645B70D3201A5 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4C4788361093C399E3A18DF2 /* Build configuration list for PBXProject "OsloCodex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"nb-NO",
+			);
+			mainGroup = 3B9AAAF1CF4E080BBA9A3B25;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 100;
+			productRefGroup = A724BE1DD23461E90D19639A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				447C169F4DF025E00D92FA79 /* OsloCodex */,
+				66D2EB08C05645B70D3201A5 /* OsloCodexWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56666F0520AF82D6458C6F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D93F87E5ABE18FD2A93B7A /* Assets.xcassets in Resources */,
+				B2D00D204A9E8893BF1A0DB2 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD30EF1E2980A08AD114BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A25496D600E71BD7B7108D /* Assets.xcassets in Resources */,
+				81EB355D7989E3757A4407DC /* Localizable.xcstrings in Resources */,
+				B7821F981AB5EA6B7BA2F7F3 /* oslo-codex.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4615DB22C6EBDB34317DDBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DD4CF7C0BBDBD1F34B8679 /* Palette.swift in Sources */,
+				9CF6A73FFAD143C3BE353CE8 /* PlatformLinks.swift in Sources */,
+				9E877AACAD7E657AA3AC2C8B /* Album.swift in Sources */,
+				EA6B65E34DC49A0189CA15AF /* OsloCodexWidget.swift in Sources */,
+				28EFC790CD7A41A61A52EEB2 /* TrackChoice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C04E1C6A45F0CDB62749B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0233218A9C9A936AF6F52AD8 /* OsloCodexApp.swift in Sources */,
+				7F995A5CF1714A08AED29E16 /* AppRouter.swift in Sources */,
+				F00F620D51372DE4BCB3117D /* RootTabView.swift in Sources */,
+				FF0A28347504422A83F7B839 /* Palette.swift in Sources */,
+				3227EE0481A4D04791A65F5C /* Chrome.swift in Sources */,
+				55D45C0750B11CC233FD3BE1 /* PlatformLinks.swift in Sources */,
+				703A48F2DC1AC525C5111D6E /* Album.swift in Sources */,
+				6081BB2E552F6AE7AB68E047 /* HomeView.swift in Sources */,
+				6EE77FE90141A397B8D34C4A /* ListenSheet.swift in Sources */,
+				EA1DF06726FF82E8C70A9E8B /* TracksView.swift in Sources */,
+				750CD20EDE72E2CFF88FF231 /* TrackDetailView.swift in Sources */,
+				9E5BC93472A7617E7BE7AFB8 /* PlacesView.swift in Sources */,
+				84FDDEB2791FBE2FDB273F18 /* ArtistView.swift in Sources */,
+				4EC7CBF2CF965226BC5F2EAA /* LinkOpener.swift in Sources */,
+				D2F5BA10EAA66E65BFD5863E /* MusicService.swift in Sources */,
+				5D6F108A39F387040F1B1A14 /* LyricsLoader.swift in Sources */,
+				FC3BB0F9BBF03F4C89FE4067 /* AlbumIntents.swift in Sources */,
+				AD3D5B28728149473B097D01 /* TrackChoice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8DD300B35956C819B46C530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OsloCodexWidgetExtension;
+			target = 66D2EB08C05645B70D3201A5 /* OsloCodexWidgetExtension */;
+			targetProxy = BDCAE3CB39AB9C0CDDA1DAA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BEE6BC9C3C90237B9C45DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		46BE5B9AC8B4EDD3321F691F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OsloCodex/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = no.cybergroup.oslocodex;
+				PRODUCT_NAME = OsloCodex;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C61AF9C505AF0B05E97ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OsloCodexWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = no.cybergroup.oslocodex.widget;
+				PRODUCT_NAME = OsloCodexWidgetExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		93485B02B90A6B66502B87E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OsloCodex/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = no.cybergroup.oslocodex;
+				PRODUCT_NAME = OsloCodex;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0FBCC1AAF10AF94C4F99DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+		DDC6B36135BE684D2F1A2EE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OsloCodexWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = no.cybergroup.oslocodex.widget;
+				PRODUCT_NAME = OsloCodexWidgetExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C4788361093C399E3A18DF2 /* Build configuration list for PBXProject "OsloCodex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEE6BC9C3C90237B9C45DFA /* Debug */,
+				C0FBCC1AAF10AF94C4F99DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D061FFD0C1477834255C2D /* Build configuration list for PBXNativeTarget "OsloCodex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BE5B9AC8B4EDD3321F691F /* Release */,
+				93485B02B90A6B66502B87E6 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9096FA19754DD252C31DF5E /* Build configuration list for PBXNativeTarget "OsloCodexWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC6B36135BE684D2F1A2EE3 /* Release */,
+				85C61AF9C505AF0B05E97ED4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 288FEF7ECDFC9635F57BBE71 /* Project object */;
+}

@@ -1,0 +1,438 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "tab_codex": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Codex"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Codex"
+          }
+        }
+      }
+    },
+    "tab_tracks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracks"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spor"
+          }
+        }
+      }
+    },
+    "tab_oslo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oslo"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oslo"
+          }
+        }
+      }
+    },
+    "tab_artist": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artist"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artist"
+          }
+        }
+      }
+    },
+    "listen_now": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listen now"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lytt nå"
+          }
+        }
+      }
+    },
+    "share_album": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share album"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del album"
+          }
+        }
+      }
+    },
+    "add_to_apple_music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to Apple Music"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til i Apple Music"
+          }
+        }
+      }
+    },
+    "tracks_section": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracks"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spor"
+          }
+        }
+      }
+    },
+    "places_section": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oslo"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oslo"
+          }
+        }
+      }
+    },
+    "related_drop_subtitle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Related drop"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beslektet utgivelse"
+          }
+        }
+      }
+    },
+    "listen_sheet_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listen now"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lytt nå"
+          }
+        }
+      }
+    },
+    "listen_sheet_subtitle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official destinations only — deep links first, web fallback if needed."
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun offisielle lytteflater — app-lenker først, nett som reserve."
+          }
+        }
+      }
+    },
+    "open_in": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open in"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åpne i"
+          }
+        }
+      }
+    },
+    "credits_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Credits"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krediteringer"
+          }
+        }
+      }
+    },
+    "writer_label": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Writer"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekst"
+          }
+        }
+      }
+    },
+    "producer_label": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Producer"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produsent"
+          }
+        }
+      }
+    },
+    "lyrics_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lyrics"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekst"
+          }
+        }
+      }
+    },
+    "lyrics_coming": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lyrics coming"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekst kommer"
+          }
+        }
+      }
+    },
+    "listen_row_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listen"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lytt"
+          }
+        }
+      }
+    },
+    "share_track": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share this track"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del dette sporet"
+          }
+        }
+      }
+    },
+    "navigate": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navigate"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naviger"
+          }
+        }
+      }
+    },
+    "listen_here": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listen here"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lytt her"
+          }
+        }
+      }
+    },
+    "artist_bio": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jon Arve Ovesen has played piano since 1984 and produced since 1994, from Cubase to Nuendo. Oslo Codex carries Eidsvoll and Oslo into a cold, precise Nordic rap-noir frame under Cybergroup Incorporated."
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jon Arve Ovesen har spilt piano siden 1984 og produsert siden 1994, fra Cubase til Nuendo. Oslo Codex tar med seg Eidsvoll og Oslo inn i et kjølig og presist nordisk rap-noir-univers under Cybergroup Incorporated."
+          }
+        }
+      }
+    },
+    "discography_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discography"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diskografi"
+          }
+        }
+      }
+    },
+    "links_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Links"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lenker"
+          }
+        }
+      }
+    },
+    "support_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Støtt"
+          }
+        }
+      }
+    },
+    "support_subtitle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PayPal"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PayPal"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
