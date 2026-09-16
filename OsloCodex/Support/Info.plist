@@ -29,8 +29,6 @@
     </array>
     <key>NSAppleMusicUsageDescription</key>
     <string>Oslo Codex uses Apple Music so you can play the album if you subscribe.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Oslo Codex uses your location only to open Maps directions to a place from the album.</string>
     <key>UIApplicationSupportsIndirectInputEvents</key>
     <true/>
     <key>UILaunchScreen</key>

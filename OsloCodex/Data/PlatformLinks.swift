@@ -53,7 +53,7 @@ struct PlatformLink: Identifiable, Hashable {
 }
 
 enum PlatformLinks {
-    static let hashtags = ["#OsloCodex", "#nordicrapnoir", "#rap", "#rnb"]
+    static let hashtags = ["#OsloCodex", "#nordicrapnoir"]
 
     static let canonicalShareURL = URL(string: "https://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ")!
     private static let spotifyAlbumURLString = ""
@@ -83,7 +83,7 @@ enum PlatformLinks {
         kind: .youTubeMusic,
         title: "YouTube Music",
         subtitle: "Album playlist",
-        nativeURL: nil,
+        nativeURL: URL(string: "youtube://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ"),
         webURL: URL(string: "https://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ")!
     )
 

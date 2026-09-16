@@ -27,6 +27,7 @@ struct TracksView: View {
                                     .font(.caption.bold())
                                     .padding(6)
                                     .background(Palette.warn, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                                    .accessibilityLabel(String(localized: "explicit_badge"))
                             }
                         }
                     }

@@ -145,6 +145,10 @@ struct HomeView: View {
                         .padding(18)
                         .background(Palette.backgroundElevated, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(Text("Nordic Noir and Neon Circuits"))
+                    .accessibilityValue(Text(String(localized: "related_drop_subtitle")))
+                    .accessibilityHint(Text("\(String(localized: "open_in")) SoundCloud"))
                 }
                 .padding(20)
             }

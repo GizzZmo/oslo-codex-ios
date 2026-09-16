@@ -432,6 +432,22 @@
           }
         }
       }
+    },
+    "explicit_badge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explicit"
+          }
+        },
+        "nb-NO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksplisitt"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

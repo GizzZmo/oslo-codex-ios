@@ -74,7 +74,7 @@ struct OsloCodexWidgetEntryView: View {
                         .foregroundStyle(Palette.ice)
                     HStack {
                         ForEach(track.widgetPlatforms, id: \.id) { platform in
-                            Link(platform.title, destination: platform.webURL)
+                            Link(platform.title, destination: platform.bestURL)
                         }
                     }
                     .font(.caption.bold())

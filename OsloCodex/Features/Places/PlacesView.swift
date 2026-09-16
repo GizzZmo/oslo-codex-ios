@@ -3,6 +3,7 @@ import SwiftUI
 
 struct PlacesView: View {
     @Bindable var router: AppRouter
+    @Environment(\.openURL) private var openURL
     @State private var cameraPosition: MapCameraPosition = .region(
         MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 59.9115, longitude: 10.7514),
@@ -47,7 +48,7 @@ struct PlacesView: View {
                                     .buttonStyle(GlassButtonStyle())
 
                                     Button {
-                                        NavigationService.shared.navigate(to: mapsURL(for: place))
+                                        openURL(mapsURL(for: place))
                                     } label: {
                                         Label(String(localized: "navigate"), systemImage: "location")
                                     }
