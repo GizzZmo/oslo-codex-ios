@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 
 struct HomeView: View {
@@ -90,7 +91,7 @@ struct HomeView: View {
                                         router.selectedTrack = track
                                     } label: {
                                         VStack(alignment: .leading, spacing: 10) {
-                                            Text("0\(track.index)")
+                                            Text(String(format: "%02d", track.index))
                                                 .font(.caption.weight(.bold))
                                                 .foregroundStyle(Palette.neon)
                                             Text(track.title)

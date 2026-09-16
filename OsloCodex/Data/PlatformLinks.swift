@@ -83,7 +83,7 @@ enum PlatformLinks {
         kind: .youTubeMusic,
         title: "YouTube Music",
         subtitle: "Album playlist",
-        nativeURL: URL(string: "youtubemusic://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ"),
+        nativeURL: nil,
         webURL: URL(string: "https://www.youtube.com/playlist?list=OLAK5uy_mqxm7ghcHbbK576Pw05FJYuBcI5sovotQ")!
     )
 
@@ -91,7 +91,7 @@ enum PlatformLinks {
         kind: .soundCloud,
         title: "SoundCloud",
         subtitle: "Oslo Codex",
-        nativeURL: URL(string: "soundcloud://soundcloud.com/jon_arve/oslo-codex-1"),
+        nativeURL: nil,
         webURL: URL(string: "https://soundcloud.com/jon_arve/oslo-codex-1")!
     )
 
@@ -99,7 +99,7 @@ enum PlatformLinks {
         kind: .soundCloud,
         title: "SoundCloud",
         subtitle: "Artist page",
-        nativeURL: URL(string: "soundcloud://soundcloud.com/jon_arve"),
+        nativeURL: nil,
         webURL: URL(string: "https://soundcloud.com/jon_arve")!
     )
 
@@ -107,7 +107,7 @@ enum PlatformLinks {
         kind: .youTube,
         title: "YouTube",
         subtitle: "Official channel",
-        nativeURL: URL(string: "youtube://www.youtube.com/@JonArveOvesen"),
+        nativeURL: nil,
         webURL: URL(string: "https://www.youtube.com/@JonArveOvesen")!
     )
 
@@ -155,7 +155,7 @@ enum PlatformLinks {
         kind: .relatedSoundCloud,
         title: "Nordic Noir and Neon Circuits",
         subtitle: String(localized: "related_drop_subtitle"),
-        nativeURL: URL(string: "soundcloud://soundcloud.com/jon_arve/nordic-noir-and-neon-circuits"),
+        nativeURL: nil,
         webURL: URL(string: "https://soundcloud.com/jon_arve/nordic-noir-and-neon-circuits")!
     )
 

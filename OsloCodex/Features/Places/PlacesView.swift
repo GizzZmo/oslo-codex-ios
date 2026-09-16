@@ -26,7 +26,8 @@ struct PlacesView: View {
                         }
                     }
                 }
-                .mapStyle(.standard(elevation: .flat))
+                .mapStyle(.standard(elevation: .flat, emphasis: .muted))
+                .environment(\.colorScheme, .dark)
                 .ignoresSafeArea()
 
                 ScrollView(.horizontal, showsIndicators: false) {
