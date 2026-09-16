@@ -30,6 +30,7 @@
 		81EB355D7989E3757A4407DC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D1A4026C009FC5E489F36 /* Localizable.xcstrings */; };
 		84D09F9B309FE004FEF7F6F3 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C827AE7183786E5D6485C /* AppIntents.framework */; };
 		84FDDEB2791FBE2FDB273F18 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F0C8257A4E95A52A14459 /* ArtistView.swift */; };
+		889A94DEC87FB0A1CBE749F3 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93608F40C9C42C2DD51A6C60 /* NavigationService.swift */; };
 		91B439E9DCF59BD8CCDF8365 /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2581C514AD256E31FD95F20 /* MusicKit.framework */; };
 		92DD4CF7C0BBDBD1F34B8679 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D31B0D01EF3AFB3BC7A1940 /* Palette.swift */; };
 		9CF6A73FFAD143C3BE353CE8 /* PlatformLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */; };
@@ -91,6 +92,7 @@
 		87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlatformLinks.swift; path = OsloCodex/Data/PlatformLinks.swift; sourceTree = "<group>"; };
 		8AA85E5D33A88F7510F5D8A7 /* ListenSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenSheet.swift; path = OsloCodex/Features/Listen/ListenSheet.swift; sourceTree = "<group>"; };
 		8E34FD2286AC526E3EFCB83C /* LyricsLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyricsLoader.swift; path = OsloCodex/Services/LyricsLoader.swift; sourceTree = "<group>"; };
+		93608F40C9C42C2DD51A6C60 /* NavigationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationService.swift; path = OsloCodex/Services/NavigationService.swift; sourceTree = "<group>"; };
 		96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
 		97E59F610A243DBDD45B3178 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = "<group>"; };
 		97E7C50EC2C58153EB4E8C5B /* OsloCodexWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OsloCodexWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 				0CF64E4FCFC937E9B42112CB /* Info.plist */,
 				62CF6AD3503D48EB025BED93 /* oslo-codex.md */,
 				DD82E4265B7FEF3AA6A1C1D1 /* TrackChoice.swift */,
+				93608F40C9C42C2DD51A6C60 /* NavigationService.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,6 +341,7 @@
 				5D6F108A39F387040F1B1A14 /* LyricsLoader.swift in Sources */,
 				FC3BB0F9BBF03F4C89FE4067 /* AlbumIntents.swift in Sources */,
 				AD3D5B28728149473B097D01 /* TrackChoice.swift in Sources */,
+				889A94DEC87FB0A1CBE749F3 /* NavigationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

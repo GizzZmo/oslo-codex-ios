@@ -130,12 +130,13 @@ struct Track: Identifiable, Hashable, Sendable {
     }
 
     var widgetPlatforms: [PlatformLink] {
-        let preferred = [
+        let required = [
             PlatformLinks.primaryAppleMusic,
-            PlatformLinks.spotifyAlbum ?? PlatformLinks.spotifyArtist
+            PlatformLinks.spotifyAlbum ?? PlatformLinks.spotifyArtist,
+            PlatformLinks.youTubeMusicAlbum
         ]
         var seen = Set<PlatformLink.Kind>()
-        return (preferred + platforms)
+        return (required + platforms)
             .compactMap { $0 }
             .filter { seen.insert($0.kind).inserted }
             .prefix(3)

@@ -12,12 +12,12 @@ final class LinkOpener {
         generator.impactOccurred()
 
         let application = UIApplication.shared
-        let preferred = platform.bestURL
-
-        if application.canOpenURL(preferred) {
-            application.open(preferred)
-        } else {
-            application.open(platform.webURL)
+        if let nativeURL = platform.nativeURL,
+           application.canOpenURL(nativeURL) {
+            application.open(nativeURL)
+            return
         }
+
+        application.open(platform.webURL)
     }
 }

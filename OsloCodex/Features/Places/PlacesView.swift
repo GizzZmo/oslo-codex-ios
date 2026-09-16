@@ -46,7 +46,9 @@ struct PlacesView: View {
                                     }
                                     .buttonStyle(GlassButtonStyle())
 
-                                    Link(destination: mapsURL(for: place)) {
+                                    Button {
+                                        NavigationService.shared.navigate(to: mapsURL(for: place))
+                                    } label: {
                                         Label(String(localized: "navigate"), systemImage: "location")
                                     }
                                     .buttonStyle(GlassButtonStyle())

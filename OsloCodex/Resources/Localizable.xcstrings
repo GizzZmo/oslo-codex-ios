@@ -102,13 +102,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Add to Apple Music"
+            "value": "Open in Apple Music"
           }
         },
         "nb-NO": {
           "stringUnit": {
             "state": "translated",
-            "value": "Legg til i Apple Music"
+            "value": "Åpne i Apple Music"
           }
         }
       }
