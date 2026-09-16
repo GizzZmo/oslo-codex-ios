@@ -8,7 +8,7 @@ This app is a real album companion: official listen deep links, lyrics, Oslo pla
 ## Run in Simulator
 
 ```text
-Open /home/runner/work/oslo-codex-ios/oslo-codex-ios/OsloCodex.xcodeproj in Xcode 27+
+Open OsloCodex.xcodeproj in Xcode 27+
 Select the OsloCodex scheme
 Choose an iPhone simulator running iOS 27
 Press Command-R

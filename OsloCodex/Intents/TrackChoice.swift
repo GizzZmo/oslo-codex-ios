@@ -9,6 +9,9 @@ enum TrackChoice: String, AppEnum, CaseIterable {
     ]
 
     var track: Track {
-        Album.current.tracks[0]
+        switch self {
+        case .osloCodex:
+            Album.current.track(slug: "oslo-codex") ?? Album.current.tracks[0]
+        }
     }
 }

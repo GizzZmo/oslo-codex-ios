@@ -124,6 +124,19 @@ struct Track: Identifiable, Hashable, Sendable {
         \(PlatformLinks.hashtags.joined(separator: " "))
         """
     }
+
+    var widgetPlatforms: [PlatformLink] {
+        let preferred = [
+            PlatformLinks.primaryAppleMusic,
+            PlatformLinks.spotifyAlbum ?? PlatformLinks.spotifyArtist
+        ]
+        var seen = Set<PlatformLink.Kind>()
+        return (preferred + platforms)
+            .compactMap { $0 }
+            .filter { seen.insert($0.kind).inserted }
+            .prefix(3)
+            .map { $0 }
+    }
 }
 
 struct Credits: Hashable, Sendable {

@@ -40,6 +40,10 @@ struct OsloCodexWidgetEntryView: View {
     @Environment(\.widgetFamily) private var family
     let entry: OsloCodexEntry
 
+    private var track: Track {
+        entry.choice.track
+    }
+
     var body: some View {
         switch family {
         case .systemSmall:
@@ -62,14 +66,14 @@ struct OsloCodexWidgetEntryView: View {
                     .frame(width: 110)
                     .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Oslo Codex")
+                    Text(track.title)
                         .font(.headline)
                         .foregroundStyle(Palette.ink)
                     Text("Jon Arve Ovesen")
                         .font(.subheadline)
                         .foregroundStyle(Palette.ice)
                     HStack {
-                        ForEach(PlatformLinks.widgetPlatforms, id: \.id) { platform in
+                        ForEach(track.widgetPlatforms, id: \.id) { platform in
                             Link(platform.title, destination: platform.webURL)
                         }
                     }
@@ -88,7 +92,7 @@ struct OsloCodexWidgetEntryView: View {
             .widgetURL(URL(string: "oslocodex://listen"))
         case .accessoryRectangular:
             VStack(alignment: .leading) {
-                Text("Oslo Codex")
+                Text(track.title)
                     .font(.caption.bold())
                 Text("Listen now")
                     .font(.caption2)
@@ -96,8 +100,8 @@ struct OsloCodexWidgetEntryView: View {
             .foregroundStyle(Palette.ink)
             .widgetURL(URL(string: "oslocodex://listen"))
         default:
-            Text("Oslo Codex")
-                .widgetURL(URL(string: "oslocodex://listen"))
+            Text(track.title)
+                .widgetURL(URL(string: "oslocodex://track/\(track.slug)"))
         }
     }
 }

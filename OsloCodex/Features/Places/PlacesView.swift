@@ -45,7 +45,7 @@ struct PlacesView: View {
                                     }
                                     .buttonStyle(GlassButtonStyle())
 
-                                    Link(destination: URL(string: "http://maps.apple.com/?ll=\(place.latitude),\(place.longitude)&q=\(place.title.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? place.title)")!) {
+                                    Link(destination: URL(string: "https://maps.apple.com/?ll=\(place.latitude),\(place.longitude)&q=\(place.title.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? place.title)")!) {
                                         Label(String(localized: "navigate"), systemImage: "location")
                                     }
                                     .buttonStyle(GlassButtonStyle())
