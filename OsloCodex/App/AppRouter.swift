@@ -10,16 +10,9 @@ final class AppRouter {
         case artist
     }
 
-    enum ShareTarget: String, Identifiable {
-        case album
-
-        var id: String { rawValue }
-    }
-
     var selectedTab: Tab = .codex
     var selectedTrack: Track?
     var isListenSheetPresented = false
-    var shareTarget: ShareTarget?
 
     func handle(url: URL) {
         guard url.scheme == "oslocodex" else { return }
@@ -29,6 +22,7 @@ final class AppRouter {
             selectedTab = .codex
             isListenSheetPresented = true
         case "track":
+            isListenSheetPresented = false
             guard let slug = url.pathComponents.dropFirst().first,
                   let track = Album.current.track(slug: slug) else {
                 return
@@ -36,12 +30,11 @@ final class AppRouter {
             selectedTab = .tracks
             selectedTrack = track
         case "places":
+            isListenSheetPresented = false
             selectedTab = .oslo
         case "artist":
+            isListenSheetPresented = false
             selectedTab = .artist
-        case "share":
-            selectedTab = .codex
-            shareTarget = .album
         default:
             break
         }

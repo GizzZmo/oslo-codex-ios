@@ -37,17 +37,7 @@ struct RootTabView: View {
                 .presentationDragIndicator(.visible)
                 .presentationCornerRadius(28)
         }
-        .sheet(item: $router.shareTarget) { target in
-            ActivityView(items: [shareText(for: target)])
-        }
         .tint(Palette.neon)
         .background(Palette.background.ignoresSafeArea())
-    }
-
-    private func shareText(for target: AppRouter.ShareTarget) -> String {
-        switch target {
-        case .album:
-            Album.current.shareText
-        }
     }
 }

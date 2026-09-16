@@ -13,7 +13,6 @@
 		28EFC790CD7A41A61A52EEB2 /* TrackChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4265B7FEF3AA6A1C1D1 /* TrackChoice.swift */; };
 		2D2F94EFABE3965AE81A2573 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E59F610A243DBDD45B3178 /* WidgetKit.framework */; };
 		3227EE0481A4D04791A65F5C /* Chrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE794D4F85D05394BCDC61E3 /* Chrome.swift */; };
-		387A8479C0AEE0621FB033F9 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379E2C6963CDCCAE4F88015 /* ActivityView.swift */; };
 		4EC7CBF2CF965226BC5F2EAA /* LinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4843DE526A1F323BD029A /* LinkOpener.swift */; };
 		5275313B5940D306F22A0619 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C827AE7183786E5D6485C /* AppIntents.framework */; };
 		55D45C0750B11CC233FD3BE1 /* PlatformLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */; };
@@ -82,7 +81,6 @@
 		35365F7731A4AE8E02C01B9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
 		3D8429C4C31BFC8BD37D6572 /* OsloCodexWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OsloCodexWidget.swift; path = OsloCodexWidget/OsloCodexWidget.swift; sourceTree = "<group>"; };
 		3FD040DD24889D22F62222D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = OsloCodex/Support/Info.plist; sourceTree = "<group>"; };
-		5379E2C6963CDCCAE4F88015 /* ActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityView.swift; path = OsloCodex/Services/ActivityView.swift; sourceTree = "<group>"; };
 		5381BD2032FAB271EC0282A7 /* AppRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRouter.swift; path = OsloCodex/App/AppRouter.swift; sourceTree = "<group>"; };
 		545CA20BDEBDA3609612717B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OsloCodex/Assets.xcassets; sourceTree = "<group>"; };
 		5D2F0C8257A4E95A52A14459 /* ArtistView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArtistView.swift; path = OsloCodex/Features/Artist/ArtistView.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				A4A4843DE526A1F323BD029A /* LinkOpener.swift */,
 				DD57A2AD8789D4F973A12889 /* MusicService.swift */,
 				8E34FD2286AC526E3EFCB83C /* LyricsLoader.swift */,
-				5379E2C6963CDCCAE4F88015 /* ActivityView.swift */,
 				CD6CB6AC7CDA338D5761E034 /* AlbumIntents.swift */,
 				7C4D1A4026C009FC5E489F36 /* Localizable.xcstrings */,
 				3FD040DD24889D22F62222D8 /* Info.plist */,
@@ -269,6 +266,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"nb-NO",
 			);
 			mainGroup = 3B9AAAF1CF4E080BBA9A3B25;
 			minimizedProjectReferenceProxies = 0;
@@ -338,7 +336,6 @@
 				4EC7CBF2CF965226BC5F2EAA /* LinkOpener.swift in Sources */,
 				D2F5BA10EAA66E65BFD5863E /* MusicService.swift in Sources */,
 				5D6F108A39F387040F1B1A14 /* LyricsLoader.swift in Sources */,
-				387A8479C0AEE0621FB033F9 /* ActivityView.swift in Sources */,
 				FC3BB0F9BBF03F4C89FE4067 /* AlbumIntents.swift in Sources */,
 				AD3D5B28728149473B097D01 /* TrackChoice.swift in Sources */,
 			);
