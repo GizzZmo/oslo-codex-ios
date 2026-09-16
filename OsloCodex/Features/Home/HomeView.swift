@@ -3,6 +3,7 @@ import SwiftUI
 struct HomeView: View {
     @Bindable var router: AppRouter
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var animateCover = false
 
     var body: some View {
         NavigationStack {
@@ -14,8 +15,8 @@ struct HomeView: View {
                             .scaledToFill()
                             .frame(height: 420)
                             .clipped()
-                            .scaleEffect(reduceMotion ? 1 : 1.05)
-                            .animation(reduceMotion ? nil : .easeInOut(duration: 12).repeatForever(autoreverses: true), value: reduceMotion)
+                            .scaleEffect(reduceMotion ? 1 : (animateCover ? 1.05 : 1))
+                            .animation(reduceMotion ? nil : .easeInOut(duration: 12).repeatForever(autoreverses: true), value: animateCover)
                             .overlay(
                                 LinearGradient(
                                     colors: [.clear, Palette.background.opacity(0.92)],
@@ -36,6 +37,10 @@ struct HomeView: View {
                     }
                     .frame(maxWidth: .infinity)
                     .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
+                    .onAppear {
+                        guard !reduceMotion else { return }
+                        animateCover = true
+                    }
                     .overlay(
                         RoundedRectangle(cornerRadius: 32, style: .continuous)
                             .stroke(Palette.ice.opacity(0.18), lineWidth: 1)

@@ -93,7 +93,7 @@
 		87D3F3165BBCA107CC53BF1F /* PlatformLinks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlatformLinks.swift; path = OsloCodex/Data/PlatformLinks.swift; sourceTree = "<group>"; };
 		8AA85E5D33A88F7510F5D8A7 /* ListenSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenSheet.swift; path = OsloCodex/Features/Listen/ListenSheet.swift; sourceTree = "<group>"; };
 		8E34FD2286AC526E3EFCB83C /* LyricsLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LyricsLoader.swift; path = OsloCodex/Services/LyricsLoader.swift; sourceTree = "<group>"; };
-		96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		96FFE94D06B0E70CBDC0EDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
 		97E59F610A243DBDD45B3178 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = "<group>"; };
 		97E7C50EC2C58153EB4E8C5B /* OsloCodexWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OsloCodexWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B81D3B14E0E03AA248A2D40 /* TrackDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackDetailView.swift; path = OsloCodex/Features/Tracks/TrackDetailView.swift; sourceTree = "<group>"; };
@@ -414,7 +414,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 6.2;
 			};
 			name = Debug;
 		};
@@ -436,7 +436,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 6.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -459,7 +459,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 6.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -482,7 +482,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 6.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -538,7 +538,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 6.2;
 			};
 			name = Release;
 		};
@@ -559,7 +559,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 6.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};

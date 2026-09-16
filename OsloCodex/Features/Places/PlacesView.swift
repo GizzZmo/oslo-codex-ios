@@ -45,7 +45,7 @@ struct PlacesView: View {
                                     }
                                     .buttonStyle(GlassButtonStyle())
 
-                                    Link(destination: URL(string: "https://maps.apple.com/?ll=\(place.latitude),\(place.longitude)&q=\(place.title.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? place.title)")!) {
+                                    Link(destination: mapsURL(for: place)) {
                                         Label(String(localized: "navigate"), systemImage: "location")
                                     }
                                     .buttonStyle(GlassButtonStyle())
@@ -63,5 +63,14 @@ struct PlacesView: View {
             }
             .navigationTitle(String(localized: "places_section"))
         }
+    }
+
+    private func mapsURL(for place: Place) -> URL {
+        var components = URLComponents(string: "https://maps.apple.com/")!
+        components.queryItems = [
+            URLQueryItem(name: "ll", value: "\(place.latitude),\(place.longitude)"),
+            URLQueryItem(name: "q", value: place.title)
+        ]
+        return components.url!
     }
 }

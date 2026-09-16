@@ -120,9 +120,13 @@ struct Track: Identifiable, Hashable, Sendable {
     var shareText: String {
         """
         \(title) — \(Album.current.artist)
-        \(Album.current.bestShareURL.absoluteString)
+        \(bestShareURL.absoluteString)
         \(PlatformLinks.hashtags.joined(separator: " "))
         """
+    }
+
+    var bestShareURL: URL {
+        platforms.first?.webURL ?? Album.current.bestShareURL
     }
 
     var widgetPlatforms: [PlatformLink] {

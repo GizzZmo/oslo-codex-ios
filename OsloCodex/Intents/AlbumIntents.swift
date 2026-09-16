@@ -30,8 +30,11 @@ struct OpenTrackIntent: AppIntent {
 struct ShareAlbumIntent: AppIntent {
     static let title: LocalizedStringResource = "Share Album"
 
-    func perform() async throws -> some IntentResult & OpensIntent {
-        .result(opensIntent: OpenURLIntent(URL(string: "oslocodex://share")!))
+    func perform() async throws -> some IntentResult & ReturnsValue<String> & ProvidesDialog {
+        .result(
+            value: Album.current.shareText,
+            dialog: IntentDialog("Oslo Codex is ready to share.")
+        )
     }
 }
 
